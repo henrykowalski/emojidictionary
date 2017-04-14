@@ -13,7 +13,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var dacooltableview: UITableView!
     
     var emojis = ["😀","😇","🤓","💀","👻","🙀","😬","😭","😡","🤕","🎃","🙏🏾","👏","🍩","🍿","🍣","☕️"]
+   
     
+    /* to se nepovedlo
+    var kecka = ["drzticka","pozoro na svatouška","brejloun","smrtka!","at ziji duchove","uuaaaaa","zzzzzzzz","hihhihihihih","jsem nasranej!", "auuuu", "smashing pumpkin","prosimmm","aplaus","yummy donut","gimme one","zummz sushi...","i need another coffee!"]
+ */
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -39,6 +44,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // tenhle radek pomuze ze neni videt predchozi vyber kdyz s evratis zpatky
         tableView.deselectRow(at: indexPath, animated: true)
         let emoji = emojis[indexPath.row]
+        /* to de nepovedlo 
+        let HLASKA = kecka[indexPath.row]
+        */
         performSegue(withIdentifier: "moveSegue", sender: emoji)
     }
     
