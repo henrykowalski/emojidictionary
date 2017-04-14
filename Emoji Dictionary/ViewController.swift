@@ -4,7 +4,7 @@
 //
 //  Created by Andrzej Palec on 14/04/2017.
 //  Copyright © 2017 Andrzej Palec. All rights reserved.
-//
+// yes
 
 import UIKit
 
